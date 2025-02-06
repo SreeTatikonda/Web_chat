@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 dark:bg-black text-gray-900 dark:text-white">
+    <div id="chat-web-app" class="max-w-md mx-auto mt-10 p-4 bg-white dark:bg-gray-900 rounded-xl shadow-lg w-full sm:w-96">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">Web Chat</h2>
+            <select id="mode-toggle" class="p-2 bg-gray-200 dark:bg-gray-700 rounded">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+        <div class="sidebar flex flex-col space-y-4">
+            <app-brand></app-brand>
+            <authed-user hidden></authed-user>
+            <chats-list></chats-list>
+        </div>
+        <chat-box hidden></chat-box>
+    </div>
+    <script src="components/component.js"></script>
+    <script src="scripts/recorder.js"></script>
+    <script src="scripts/data-factory.js"></script>
+    <script src="scripts/chat-app.js"></script>
+    <script src="components/authed-user.js"></script>
+    <script src="components/app-brand.js"></script>
+    <script src="components/chats-list.js"></script>
+    <script src="components/active-chat.js"></script>
+    <script src="components/new-message.js"></script>
+    <script src="components/chat-message.js"></script>
+    <script src="components/chat-box.js"></script>
+    <script src="components/chat-list-item.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
